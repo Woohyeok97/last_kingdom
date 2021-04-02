@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="Kingdom-wiki.css">
-  <link rel="stylesheet" media="(max-width:520px)" href="/Kingdom-mobile.css">
+  <link rel="stylesheet" media="(max-width:520px)" href="Kingdom-mobile.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-EZ0P35BEFW"></script>
@@ -18,44 +18,54 @@
 
     gtag('config', 'G-EZ0P35BEFW');
   </script>
+  <script src="https://kit.fontawesome.com/45bf7fc6f3.js" crossorigin="anonymous"></script>
+<script src="Kingdom-mobile.js" defer></script>
 </head>
 
 
 <body>
   <div id="site_nav">
-  <h3 id="site_title"><a>Kingdom-Wiki</a></h3>
+  <h3 id="site_title">
+    <i class="fas fa-crown">
+      <a>Kingdom-Wiki</a>
+    </i>
+  </h3>
     <ol id="menu_container">
       <li style="list-style:none;">
         <span class="menu_line" style="border-left: 0;">
-          <a href="왕기.html" class="list" id="present_page">왕기군</a>
+          <a href="왕기.html" class="mene_list" id="present_page">왕기군</a>
         </span>
       </li>
       <li style="list-style:none;">
         <span class="menu_line">
-          <a href="" class="list">몽무군</a>
+          <a href="" class="menu_list">몽무군</a>
         </span>
       </li>
       <li style="list-style:none;">
         <span class="menu_line">
-        <a href="" class="list">왕전군</a>
+        <a href="" class="menu_list">왕전군</a>
         </span>
       </li>
       <li style="list-style:none;">
         <span class="menu_line">
-        <a href="" class="list">환기군</a>
+        <a href="" class="menu_list">환기군</a>
         </span>
       </li>
       <li style="list-style:none;">
         <span class="menu_line">
-          <a href="" class="list">양단화군</a>
+          <a href="" class="menu_list">양단화군</a>
         </span>
       </li>
       <li style="list-style:none;">
         <span class="menu_line">
-          <a href="" class="list">독립유군</a>
+          <a href="" class="menu_list">독립유군</a>
         </span>
       </li>
     </ol>
+
+    <a id="menu_buger" href="#">
+      <i class="fas fa-bars"></i>
+    </a>
   </div>
   <div id="article">
     <h1>왕기</h1>
@@ -85,7 +95,6 @@
       </tbody>
     </table>
 
-      <br>
   <div class="hero_pic">
     <img class="hero_main_pic" src="왕기.jpg">
   </div>
@@ -299,5 +308,26 @@
       </p>
       <br>
   </div>
+
+  <footer id="site_footer">
+    <div id="footer_container">
+      <div class="footer_paragraph">
+        상호명 : (주)킹덤위키
+        <span class="footer_menu_bar"></span>
+        대표이사 : 백우혁
+        <span class="footer_menu_bar mobile"></span>
+        개인정보책임자 : 왓캔누나핫바디
+        <span class="footer_menu_bar mobile"></span>
+        사업자등록번호 : 150-67-74-8282
+      </div>
+      <div class="footer_paragraph">
+        본사 :강원도 철원군 상노로 73-26 청성인민해방 교육대대
+      </div>
+      <div class="footer_paragraph">
+        고객지원 : <strong>웬만하면 하지마세요.</strong>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
