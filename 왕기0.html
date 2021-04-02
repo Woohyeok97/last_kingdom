@@ -1,0 +1,867 @@
+<!doctype html>
+
+<html>
+<head>
+  <title>왕기</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EZ0P35BEFW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-EZ0P35BEFW');
+    </script>
+    <script src="https://kit.fontawesome.com/45bf7fc6f3.js" crossorigin="anonymous"></script>
+  <script src="https://woohyeok97.github.io/last_kingdom/Kingdom-mobile.js" defer></script>
+  <style media="screen">
+  body {
+    margin: 0;
+    background-color: #efefef;
+    color: #373a3c;
+  }
+
+  h1 {
+    margin: 35px 0px;
+  }
+
+ a {
+   text-decoration: none;
+ }
+
+ li {
+   list-style: none;
+ }
+
+ .menu_list {
+   text-align: center;
+   padding: 15px 20px 15px 25px;
+   color: #cccccc;
+ }
+
+ .menu_line {
+   border-left: 3px solid #666;
+ }
+
+ #site_nav {
+   background-color: #4d6c8b;
+   text-align: center;
+   font-weight: bold;
+ }
+
+ #site_title {
+   font-size: 50px;
+   margin: 0px;
+   padding: 40px;
+   color: white;
+ }
+
+ #menu_container {
+   display: flex;
+   justify-content: center;
+   margin: 0px;
+   padding: 1.2em;
+   font-size: 25px;
+
+ }
+
+ #menu_container li {
+   display: inline;
+   cursor: pointer;
+ }
+
+ #menu_buger {
+   display: none;
+   color: #ffffff;
+   position: absolute;
+   font-size: 20px;
+   top: 8px;
+   right: 12px;
+ }
+
+ #article {
+   padding: 45px;
+   padding-top: 30px;
+   max-width: 1350px;
+   margin: 0 auto;
+   background-color: #fff;
+   border-right:3px solid #ccc;
+   border-left:3px solid #ccc;
+   margin-top: 0;
+ }
+
+ #present_page {
+   color:#ffffff;
+   font-weight: bold;
+   padding: 15px 20px 15px 25px;
+ }
+
+ .heading {
+   border-bottom: 1px solid #ccc;
+   padding-bottom: 10px;
+ }
+
+ #generals {
+   width: 100%;
+   height: 100px;
+   background-color: #f5f5f5;
+   border-collapse: collapse;
+   margin-bottom: 50px;
+ }
+
+ #generals td {
+   border: 3px solid #ddd;
+   padding: 8px;
+   text-align: center;
+   width: 16.6%;
+   font-weight: bold;
+   font-size: 18px;
+ }
+
+ .general_heading {
+   background-color: #000000;
+   color: #ffffff;
+ }
+
+ .hero_list {
+   display: inline-block;
+   width: 580px;
+   text-align: center;
+   font-size: 20px;
+   margin: 20px 0px;
+   font-weight: bold;
+   border-collapse: collapse;
+ }
+
+ .hero_heading {
+   background-color: #000000;
+   border: 3px solid #ddd;
+   border-bottom: none;
+   color: #ffffff;
+   padding: 5px 10px;
+ }
+
+ .hero_list_p {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   padding: 0px;
+   margin: 0px;
+ }
+
+ .hero_list_p li{
+   display: inline-block;
+   padding: 5px 10px;
+   border: 3px solid #ddd;
+ }
+
+ .hero_list_p a {
+   color: gray;
+ }
+
+ #present_hero {
+   color: #000000;
+ }
+
+ .hero_main_pic {
+   width: 100%;
+ }
+
+ .hero_pic {
+   font-family: cursive;
+   margin: 2em 0;
+   padding: 1em calc(2em + 25px) 1em 1em;
+   background-color: #eee;
+   border: 3px dashed #ccc;
+   border-left: 7px solid #71bc6d;
+   display: table;
+ }
+
+ #dng_pic {
+     width: 500px;
+ }
+
+ #hero_skill_container {
+   width: 100%;
+   height: 200px;
+   border-collapse: collapse;
+   background-color: #f5f5f5;
+   margin: 50px 0px 50px 0px;
+ }
+
+ #hero_skill_container td{
+   border: 3px solid #ddd;
+   padding: 10px;
+   width: 25%;
+   text-align: center;
+   font-weight: bold;
+ }
+
+
+ .skill_header, .skill_list {
+   color: #ffffff;
+   background-color: #000000;
+ }
+
+ .paragraph {
+   margin-bottom: 20px;
+ }
+
+ .Kingdom_video {
+   background-color: #eee;
+   border: 3px dashed #ccc;
+   border-left: 7px solid #71bc6d;
+   padding: 0.8em;
+   display: table;
+   width: 750px;
+ }
+
+ .Kingdom_video iframe {
+   width: 700px;
+   height: 350px;
+   margin: 30px;
+}
+
+ #site_footer {
+   background-color: #d1d3d8;
+   border: 3px solid #cccccc;
+   height: 250px;
+ }
+
+ #footer_container {
+   padding: 50PX 0PX 70px;
+   max-width: 1350px;
+   margin: 0 auto;
+   font-size: 18px;
+ }
+
+ .footer_paragraph {
+   padding: 5px 0px;
+ }
+
+ .footer_menu_bar {
+   display: inline-block;
+   background-color: rgba(59,72,89,0.2);
+   width: 2px;
+   height: 16px;
+   margin: 0 6px;
+ }
+
+
+
+ /*여기부터는 미디어쿼리 입니다.*/
+ /*PC모니터 화면 절반*/
+ @media(max-width:1000px) {
+
+   .hero_pic {
+     margin: 30px auto;
+     padding: 16px 40px;
+   }
+
+   #menu_container {
+     font-size: 20px;
+   }
+
+   #article {
+     padding: 30px 55px;
+   }
+
+   .hero_list {
+     display: table;
+     margin: 30px auto;
+   }
+
+   #footer_container {
+     max-width: 850px;
+     margin: 0 auto;
+   }
+ }
+
+
+  @media(max-width:1000px) {
+    body {
+      margin: 0;
+      background-color: #efefef;
+      color: #373a3c;
+    }
+
+    h1 {
+      margin:10px 0px;
+      font-size: 25px;
+    }
+
+   a {
+     text-decoration: none;
+   }
+
+   li {
+     list-style: none;
+   }
+
+   #site_nav {
+     display: flex;
+     flex-direction: column;
+     background-color: #4d6c8b;
+     font-weight: bold;
+   }
+
+   #site_title {
+     text-align: left;
+     font-size: 18px;
+     margin-bottom: 0px;
+     padding: 10px 10px 12px;
+     color: white;
+   }
+
+   #menu_container {
+     display: none;
+     flex-direction: column;
+     margin: 0px;
+     padding: 0px;
+     padding-bottom: 5px;
+     font-size: 15px;
+   }
+
+   #menu_container li {
+     display: inline;
+     padding: 10px 0;
+     cursor: pointer;
+   }
+
+
+   .menu_list {
+     text-align: center;
+     padding: 15px 20px 15px 25px;
+     color: #cccccc;
+   }
+
+   .menu_line {
+     border: none;
+   }
+
+   #menu_container.active {
+     display: flex;
+   }
+
+   #menu_buger {
+     display: block;
+     color: #ffffff;
+     position: absolute;
+     padding: 4px;
+     font-size: 18px;
+     top: 6px;
+     right: 8px;
+   }
+
+   #article {
+     padding: 20px;
+     padding-top: 15px;
+     max-width:1350px;
+     margin: 0;
+     background-color: #fff;
+     border-right:3px solid #ccc;
+     border-left:3px solid #ccc;
+     margin-top: 0;
+   }
+
+   #present_page {
+     color:#ffffff;
+     font-weight: bold;
+   }
+
+   .heading {
+     font-size: 20px;
+     border-bottom: 1px solid #ccc;
+     padding-bottom: 10px;
+   }
+
+   #generals {
+     width: 100%;
+     height: 80px;
+     background-color: #f5f5f5;
+     border-collapse: collapse;
+     margin:20px 0px 30px;
+   }
+
+   #generals td {
+     border: 3px solid #ddd;
+     padding: 3px;
+     text-align: center;
+     width: 16.6%;
+     font-weight: bold;
+     font-size: 12px;
+   }
+
+   .general_heading {
+     background-color: #000000;
+     color: #ffffff;
+   }
+
+   .hero_list {
+     display: table;
+     width: 100%;
+     text-align: center;
+     font-size: 12px;
+     margin: 20px 0px 40px 0px;
+     font-weight: bold;
+     border-collapse: collapse;
+   }
+
+   .hero_heading {
+     background-color: #000000;
+     border: 3px solid #ddd;
+     border-bottom: none;
+     color: #ffffff;
+     padding: 5px 10px;
+   }
+
+   .hero_list_p {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     padding: 0px;
+     margin: 0px;
+   }
+
+   .hero_list_p li{
+     display: inline-block;
+     padding: 5px 10px;
+     border: 3px solid #ddd;
+   }
+
+   .hero_list_p a {
+     color: gray;
+   }
+
+   #present_hero {
+     color: #000000;
+   }
+
+   .hero_main_pic {
+     width: 100%;
+   }
+
+   .hero_pic {
+     display: grid;
+     grid-template-columns: 1fr;
+     font-family: cursive;
+     font-size: 12px;
+     font-weight: bold;
+     margin: 20px auto;
+     padding:15px;
+     background-color: #eee;
+     border: 3px dashed #ccc;
+     border-left: 7px solid #71bc6d;
+   }
+
+   #dng_pic {
+       width: 100%;
+   }
+
+   .hero_pic blockquote {
+     margin: 0px auto 20px;
+   }
+
+   #hero_skill_container {
+     width: 100%;
+     height: 100px;
+     border-collapse: collapse;
+     background-color: #f5f5f5;
+     margin: 20px 0px;
+     font-size: 12px;
+   }
+
+   #hero_skill_container td{
+     border: 3px solid #ddd;
+     padding: 8px;
+     width: 25%;
+     text-align: center;
+     font-weight: bold;
+   }
+
+
+   .skill_header, .skill_list {
+     color: #ffffff;
+     background-color: #000000;
+   }
+
+   .paragraph {
+     font-size: 0.8em;
+     margin-bottom: 20px;
+   }
+
+   .Kingdom_video {
+     display: grid;
+     grid-template-columns: 1fr;
+     align-items: center;
+     margin: 20px auto;
+     padding:15px;
+     background-color: #eee;
+     border: 3px dashed #ccc;
+     border-left: 7px solid #71bc6d;
+     width: auto;
+   }
+
+   .Kingdom_video iframe {
+     width: 100%;
+     height: 150px;
+     margin: 10px 0px;
+ }
+
+   #site_footer {
+     background-color: #d1d3d8;
+     border: 3px solid #cccccc;
+     height: 350px;
+   }
+
+   #footer_container {
+     padding: 50PX 20PX 100px;
+     max-width: 1350px;
+     margin: 0 auto;
+     font-size: 14px;
+     color: rgba(59,72,89,1);
+   }
+
+   .footer_paragraph {
+     padding: 5px 0px;
+   }
+
+   .footer_menu_bar {
+     display: inline-block;
+     background-color: rgba(59,72,89,0.2);
+     width: 2px;
+     height: 12px;
+     margin: 0 6px;
+   }
+
+   .footer_paragraph .mobile {
+     display: block;
+     width: 0;
+     height: 0;
+   }
+  }
+
+
+  </style>
+</head>
+
+
+<body>
+
+<script type="text/javascript">
+const menu_buger = document.querySelector('#menu_buger');
+const menu_container = document.querySelector('#menu_container');
+
+menu_buger.addEventListener('click', () => {
+  menu_container.classList.toggle('active');
+});
+</script>
+  <div id="site_nav">
+  <h3 id="site_title">
+    <i class="fas fa-crown">
+      <a>Kingdom-Wiki</a>
+    </i>
+  </h3>
+    <ol id="menu_container">
+      <li style="list-style:none;">
+        <span class="menu_line" style="border-left: 0;">
+          <a href="왕기.html" class="mene_list" id="present_page">왕기군</a>
+        </span>
+      </li>
+      <li style="list-style:none;">
+        <span class="menu_line">
+          <a href="" class="menu_list">몽무군</a>
+        </span>
+      </li>
+      <li style="list-style:none;">
+        <span class="menu_line">
+        <a href="" class="menu_list">왕전군</a>
+        </span>
+      </li>
+      <li style="list-style:none;">
+        <span class="menu_line">
+        <a href="" class="menu_list">환기군</a>
+        </span>
+      </li>
+      <li style="list-style:none;">
+        <span class="menu_line">
+          <a href="" class="menu_list">양단화군</a>
+        </span>
+      </li>
+      <li style="list-style:none;">
+        <span class="menu_line">
+          <a href="" class="menu_list">독립유군</a>
+        </span>
+      </li>
+    </ol>
+
+    <a id="menu_buger" href="#">
+      <i class="fas fa-bars"></i>
+    </a>
+  </div>
+  <div id="article">
+    <h1>왕기</h1>
+    <table id="generals">
+      <tbody>
+        <tr class="general_heading">
+          <td colspan="6">
+          육대장군
+          </td>
+        </tr>
+
+        <tr>
+        <td><a href="https://namu.wiki/w/%EB%B0%B1%EA%B8%B0(%ED%82%B9%EB%8D%A4)" style="color:#871B4D;">
+          백기</a></td>
+        <td><a href="https://namu.wiki/w/%EC%99%95%EC%9D%98(%ED%82%B9%EB%8D%A4)" style="color:#000080;">
+          왕기</a></td>
+        <td><a href="https://namu.wiki/w/%ED%98%B8%EC%96%91" style="color:#008080;">
+          호양</a></td>
+        <td><a href="https://namu.wiki/w/%EC%82%AC%EB%A7%88%EC%B0%A9" style="color:#800080;">
+          사마착</a></td>
+        <td><a href="https://namu.wiki/w/%EA%B7%9C#s-1.2" style="color:#800000;">
+          규</a></td>
+        <td><a href="https://namu.wiki/w/%EC%99%95%ED%9D%98(%ED%82%B9%EB%8D%A4)" style="color:#000000;">
+          왕흘</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+  <div class="hero_pic">
+    <img class="hero_main_pic" src="왕기.jpg">
+  </div>
+
+    <div class="hero_list">
+      <div class="hero_heading">왕기군</div>
+      <ul class="hero_list_p">
+        <li><a href="왕기.html" id="present_hero">왕기</a></li>
+        <li><a href="등.html">등</a></li>
+        <li><a href="녹오미.html">녹오미</a></li>
+      </ul>
+    </div>
+
+    <h2 class="heading">1. 개요</h2>
+      <p class="paragraph">
+      킹덤의 등장인물. 초반부에 등장했다. 만화는 '왕기'로 나오지만 실존했던 장수의 올바른 이름은 '왕의'다.
+      역사 속의 실존인물에 대해서는 왕흘 문서 참조.
+      과거 소양왕 시절 진나라의 <a href="https://namu.wiki/w/%EC%9C%A1%EB%8C%80%EC%9E%A5%EA%B5%B0" target="_blank" title="진나라 육대장군">육대장군</a> 중 한 명으로,
+      당시 적국은 그 이름만 듣고도 성을 내줄 정도로 뛰어난 무장이었다고 한다.
+      이 남자가 어떻게 보이느냐에 따라 킹덤을 봤는지 안 봤는지를 판단할 수 있다
+      </p>
+      <br>
+
+
+    <h2 class="heading">2. 행적</h2>
+      <p class="paragraph">
+      작품 초반에는 한칼에 말 위의 장수를 베거나 장난을 치면서 창문군을 상대하는 강력한 모습을 보여주면서도 후로게이스러운 언행 때문에 약해 보인다고 저평가를 받았으나
+      그 비중이 늘어나서 나중에 주인공인 신은 여불위와 더불어 이 인간의 포스에 깜놀하고 잠시 이야기를 나누면서 천하대장군이라 인정하게 된다. 이후 10권 후반에 들어서는
+      어마어마한 포스를 자랑하는 주요 인물이 된다. 주인공인 신의 멘토이며 그가 가장 존경하는 인물이다.  때문에 그를 모욕하는 발언에는 매우 격분한다.
+      본인도 신을 새로운 시대의 새싹이라 여길 정도로 좋게 봐주고 있었다.
+        <br>
+        <br>
+      과거에는 진의 괴조라 불렸으며 그 휘하의 부장들은 저마다 웬만한 장군급의 실력을 갖추고 있다. 특히 부관인 등은 그 실력이 자신과 겨뤄도 손색이 없을 정도라고 본인이 죽기 전에 말하였다.
+      등과 군장들을 포함한 그의 사병들은 왕의를 중심으로 한 작은 왕국이라 봐도 무방할 정도의 충성도를 보인다. 왕의군은 평소에도 강하지만 왕의가 선두에 나서면 그야말로 귀신같다고 할 정도.
+      다만 본인의 말에 따르면 중앙군이 아니라 평생 변방에서 싸움만을 반복했던 표공군이 조금 더 강하다고 한다.
+
+      소양왕의 사후에는 기량은 갈고 닦았으나 실전에서는 한동안 물러나 있었고, 영정을 인정한 직후에 염파와 만났을 당시 이미 우리들의 시대는 이걸로 완성되었다며
+      그만두는 게 어떠냐고 말했다. 하지만 새로운 싸움과 규의 미련을 청산하기 위해 싸움을 결의하고 다시 나아가려 했지만 모든 것을 수긍하고 죽었는데, 염파는 그의 마지막을
+      정확히 몰라서 이신이 마지막을 봤다는 말을 듣자 사천왕 윤호를 죽인 일 때문에 죽이는 걸 그만두고 물어봤고, 그의 죽음을 듣고 그답다며 납득한다.
+        <br>
+        <br>
+      작품 초반에서 중반까지는 진왕 정에게 협력하지 않고 관조만 하였으나 조나라와의 결전 때 대장으로 임명받자, 출진하기 전에 진왕 정에게
+      소양왕이 남긴 유언을 전달하고 함께 중화 통일을 이룩하자고 말한다. 허나 16권에서 조나라의 새로운 삼대천인 (자칭) 무신인 방난과 싸우다가
+      이목군의 부장인 위가에게 등을 저격당해서 틈을 보이는 바람에 방난에게 일격을 허용하고 안타깝게 사망한다. 그의 죽음에 창문군과 진왕 정은 진심으로 슬퍼하였다.
+      그 외 타 국가들의 왕과 장수들 역시 놀랍다는 반응을 보여주었다.
+
+      나중에 업 공방전 당시 이신이 왕의의 창을 사용하게 된다. 그리고 왕의가 섭맹을 베어버린 일격을 계속해서 상기하다가 그 창으로 조나라 장수 악영을 일격에 베어버렸다. 그리고 그 직전에 이신을
+      독려하는 듯한 장면으로 왕의의 입만 살짝 나와주었다.
+      </p>
+
+
+    <h2 class="heading">3. 능력</h2>
+         <table id="hero_skill_container">
+           <tbody>
+             <tr class="skill_header">
+               <td colspan="4">
+                 <strong>공식능력치</strong>
+               </td>
+             </tr>
+             <tr>
+               <td class="skill_list"><strong>시기</strong></td>
+               <td class="skill_list"><strong>무력</strong></td>
+               <td class="skill_list"><strong>지휘력</strong></td>
+               <td class="skill_list"><strong>지력</strong></td>
+             </tr>
+             <tr>
+               <td>7권</td>
+               <td>98</td>
+               <td>93</td>
+               <td>62</td>
+             </tr>
+
+             <tr>
+               <td>가이드북</td>
+               <td>98</td>
+               <td>93</td>
+               <td>62</td>
+             </tr>
+           </tbody>
+         </table>
+      <p class="paragraph">
+      작중 주인공 이신에게나 독자들에게나 <strong>'천하대장군이란 이런 것이다.'</strong>라는 점을 최초로 어필한 인물. 전략이면 전략, 무력이면 무력, 카리스마이면 카리스마, 뭐 하나
+      빠지는 게 없는 만능형 장군. 그를 마양 방어군의 사령관으로 임명한 창평군 역시 그를 만능형이라 평하며, 그의 사후 표공 역시 <strong>'전쟁의 천재'</strong>였다 말한다.
+      '전군 전진'이라는 단 두 마디로 급조되어 사기가 떨어지는 오합지졸이던 진 징집군을 열광시키는 장면에서 그 카리스마 역시 가히 짐작 가능하다.
+      </p>
+        <br>
+
+
+    <h2 class="heading">4. 기타</h2>
+      <p class="paragraph">
+      여담으로 7권과 20권에서 공개된 등장인물들의 능력치에서는 총합 4위.
+      전투 능력치인 통/무/지력만 따져서로 그 능력치는 통/무/지력 순으로 93/98/95라는 괴물 같은 능력치였다.
+        <br>
+        <br>
+      사기 본기에는 진시황 3년에 죽었다는 기록이 나와있으며, 작중 그의 부관으로 등장한 등은 이후 내사 및 남군수 등의 고위직을
+      역임하며 전국칠웅 중 최초로 한나라를 멸망시킨다는 기록이 있다.
+        <br>
+        <br>
+      게이나 오카마같은 느낌이지만 이는 기믹으로, 본인은 키잡의 소질이 있었다. 소왕의 첩 중 1명에게서 태어난 딸이자 후에 자신과 같은 육대장군이 되는 규를 아끼며
+      돌보던 중 자신을 사모하게 된 규가 "성 백개를 빼앗으면 결혼해주세요."라고 하자 좋다며 약속을 했고, 잊은 척했지만 사실은 기억하고 있어 규는 기쁨의 눈물을 흘리기도 했다.
+      하지만 규는 난입한 방난에게 어이없게 살해당하고 말았고 마침 부장으로서 참전했던 왕의였기에 이 소식을 듣고 그야말로 분기탱천. 규와의 싸움으로 부상을 입은 방난에게
+      달려들었고 방난은 거의 빈사상태로 죽다 살아났다. 이때의 모습은 언제나 자신을 컨트롤하던 왕의가 그렇게 분노한 건 처음이었다고 전해질 정도.
+        <br>
+        <br>
+      마지막 한 개의 성을 남기고 규를 살해한 방난에게는 천하의 개쌍놈을 넘어선 원한을 가져서 반드시 죽이려고 했으며 시종일관 우세한 전투력을 선보인다.
+      실제로 방난을 죽이기 일보직전까지 갔지만 조나라의 중화십궁인 위가에게 저격당해 결국 실패. 이후 몽무와 등이 분전하여 겨우 퇴각, 등에게 자신의 군대를 맡기고
+      몽무, 이신에게 격려와 자신의 창을 물려주고는 말에 앉은 상태에서 웃으며 규의 곁으로 가게 되었다.
+      </p>
+       <blockquote class="hero_pic">
+         "장군이란 백인장이나 천인장과 마찬가지로 관직이나 계급의 명칭에 불과합니다. 하지만 그곳에 다다르는 사람은 불과 한 줌. 수많은 사지를 뛰어넘고 수많은 전공을 올린 자만이
+         도달할 수 있는 곳입니다. 그 결과 장군이 얻는 것은 무수한 인간들의 목숨을 이끌고 싸우는 책임과 크나큰 영예. 따라서 그 존재는 무거우며 따라서 눈부시게 빛납니다.""
+       </blockquote>
+        <figure class="hero_pic">
+          <blockquote>
+            <img class="hero_main_pic" src="왕기 명대사1.jpg">
+          </blockquote>
+          <figcaption>
+          방난: 네 놈은 대체, 무엇이냐.
+            <br>
+          왕기: 우후후후. 그야 뻔한 것 아닌가요. <strong>천하대장군입니다.</strong>
+          </figcaption>
+        </figure>
+      <p class="paragraph">
+      치명상을 입은 상태에서도 그야말로 장군이 가지는 책임과 어깨에 짊어진 전우들의 희생이 불러온 힘만으로 방난의 목에 칼빵을 넣으면서 선언하는 모습은 킹덤 팬들이
+      뽑는 현재까지의 최고의 명장면. 연재가 14년동안 640화 넘게 진행되었지만, 이 장면을 뛰어넘는 명장면은 아직도 없다. 전쟁에서 결국은 지고, 패잔병을 이끌고 퇴주를 시작한다.
+      이때 왕의의 말은 이신이 끌고 왕의를 탈출시킨다. 중상을 입은 상황이라 곧 죽지만, 시신을 조나라에 넘겨줄 수 없기 때문. 이윽고 왕의가 정신을 차리자, 이신에게
+      "눈에 들어 노는 것을 잘 보도록 해요. 적의 무리를, 적의 얼굴을. 그리고 아군의 얼굴을. 하늘과 땅을. 이것이 장군이 보는 경치예요."라는 말을 남기며 이신이 바라던 장군이
+      어떤 것인지 알려준다.
+        <br>
+        <br>
+      여성스러운 말투에 매력적인 붉은 입술은 북두의 권의 유다를 연상케 하며, 또한 존댓말을 쓰는 강자라는 면에서는 게닛츠나 프리더와도 비슷해 보인다.
+        <br>
+        <br>
+      압도적인 포스를 풍기며 간 인물인 만큼, 킹덤의 등장인물 중에서 가장 높은 인기도를 자랑하며 죽은 후에도 굉장한 영향력을 발휘한다. 죽은지 수백 화가 지난 후에 진행한
+      인기투표에서 신조차 제치고 강외 다음 순위인 2위를 기록할 정도.
+        <br>
+        <br>
+      참고로 부관인 등은 한마 바키 시리즈의 비스켓 올리버를 닮았다. 부리부리한 눈이나 콧수염, 미소 등. 생전에 등과 함께 등장하며 보인 만담 역시 꽤나 개그 포인트.
+        <br>
+        <br>
+      오랜 동료인 창문군과의 관계는 말하자면 영혼의 배터리. 본인은 신과의 첫만남의 자리에서 '창문군을 알고 있냐?'는 그의 물음에 '애인'이라고 답하며 놀린다.
+      군번은 창문군이 빨랐지만 왕기가 뛰어난 능력을 보이며 더 빠른 출세로 그를 앞질렀다 한다. 허나 장난스러우면서 천재적인 왕의와 고지식하지만 현명하고 듬직한
+      창문군의 콤비는 인간적으로나 군사적으로나 큰 시너지를 발휘하여, 왕의와 규가 전장의 큰 그림을 그려나가면 창문군의 특수부대가 이를 뒷받침하여 그들이
+      편히 움직일 수 있게 하는 양동이 이뤄졌다고 한다. 참 절묘한 순간에 나타나 도와주곤 했다고 하는데, 그의 천성인지 본편 초반부에 창문군은 진짜로 절묘한 상황에 나타나곤 했다.
+        <br>
+        <br>
+      왕제 성교의 반란 중에도 왕의가 성교 측에 가담하는 조건이 '(정 측의 수장인)창문군의 영지와 가족, 수하들을 자신에게 모두 내어달라'는 것이어서, 덕분에 성교의
+      잔혹한 반대자 처단 중에도 반대파 수장인 창문군 일족은 왕의의 보호 아래 무사할 수 있었다. 애초에 진왕 정 측이 성교와의 경쟁에서 승리할 가능성이 적다 판단된 시점에서는
+      정의 편에서 돌아설 리 없는 창문군을 위한 최선의 선택을 한 것. 창문군을 급습했을 때도 왕의는 자기 병사까지 동원해서 창문군을 막기는 했지만 이 때 왕의는 제대로
+      병사들을 지휘하지도 싸우지도 않았다. 애초에 왕의가 제대로 군을 이끌고 싸우면 창문군과 병사들 전부 순식간에 끔살 났다. 절벽에서 대충 떨어뜨린 뒤 가짜 목으로
+      위장했는데, 이에 사씨는 대충 짐작했지만 확신이 없어서 당시에는 넘어갔었다.
+        <br>
+        <br>
+      무엇보다 창문군은 왕의가 자진하여 규의 지극히 위험한 비밀을 털어놓은 인물이기도 하다. 규의 비밀에 대해서는 항목 참고. 그만큼 왕의는 창문군을 신뢰했으며, 규 역시
+      창문군을 편하고 신뢰할만한 전우로 각별히 대했다. 그렇기에 규가 방난에게 살해당한 진상을 숨기고 거짓으로 바꾸는 데에 일조하기도 했다. 그 때문에 여불위는
+      병사한 걸로 알고 있었다. 하지만 삼대천 염파는 웬 개뼈다귀 같은 녀석이 나타나서 죽었다고 한 걸 볼 때 알 사람은 알았던 모양.
+        <br>
+        <br>
+      위의 항목에서 보면 알겠지만, 인간적으로는 친한 이들에게 상당히 장난스러운 성격인지라 죽이 잘 맞는 성격의 상대와의 대화는 항상 만담과 같이 되어 버린다.
+      앞서 언급한 창문군의 경우처럼 대조되는 성격이 시너지를 일으키는 경우가 있는가 하면, 등과 같은 이해자가 함께이면 더불어 개그를 연출하기도 한다. 한 예를 들자면...
+      </p>
+      <figure class="hero_pic">
+        <blockquote>
+          <img class="hero_main_pic" src="왕기 명대사2.jpg">
+          <br>
+        </blockquote>
+        <figcaption>
+          왕의 : "우후후후후. 저런 바보 짓을 할 사람은 섭맹밖에 없다고 생각했는데. 우훗, 역시 기대를 저버리지 않는군요."
+          <br>
+          등 : <strong>"예! 돼지의 발상답습니다."</strong>
+        </figcaption>
+      </figure>
+      <p class="paragraph">
+      대충 이런 식이다.
+        <br>
+        <br>
+      물론 주인공 신과 같은 순진한 열혈 소년은 아직 이런 장군의 치명적인 매력(...)을 받아들일 준비가 되어 있지 않은지, 이를 받아치지 못하는 모습을 보인다.
+      받아친다면 그게 더 이상한 거긴 하지만.
+        <br>
+        <br>
+      여담이지만 승마 중에는, 기묘하게도 한쪽 팔은 쭉 늘어트리고, 한쪽 팔은 허리에 댄 채 말고삐를 전혀 잡지 않는 자세를 유지하고 있다.
+        <br>
+        <br>
+      작중 초기에 리타이어했음에도 불구하고 계속해서 언급되며 여러 등장인물의 회상에서도 등장한다.
+        <br>
+        <br>
+      이신에게 창을 물려줬지만 이신은 당시 검을 주로 쓰는 보병이었고 워낙 무거운 창이라서 한동안 왕궁에 모셔두기만 했다. 그래도 꾸준히 창을 쓰는 수련을 했고 직급도
+      오천인장까지 올라가서 마침내 조나라 업 공략전에서 드디어 들고 출전한다. 파워풀한 이신인데도 아직까지도 오히려 창에 약간 휘둘릴 정도로 무거운 모양. 산양 전투 당시 몽무가 이신과
+      만났을 때 왕의의 창을 평생 못 쓸 것 같으면 나에게 넘겨도 상관없다고 언급한다. 하지만 요운 전에서 왕의에게 창을 받았던 당시를 떠올리면서 제대로 다루기 시작하고, 왕의의 일격을 떠올리면서
+      악영을 일격에 베어버리는 등 슬슬 마스터하는 모양.
+        <br>
+        <br>
+      모든 이름 있는 장수들하고 싸운 건 아니고 위 화룡칠사 중 한 명인 개맹의 경우에는 뜻이 맞지 않다는 이유로 일부러 싸우지 않았다. 이신은 그가 싸울 가치도 없다고
+      피한 걸 간파했다.
+        <br>
+        <br>
+      묘하게 전투력 측정기의 면모가 있다. 누가 언제 왕의에게 일격을 먹인 적이 있다 그런 식. 예로 염파 산하의 윤호가 윤동이라는 전법으로 왕의의 방어를 돌파하고 왕의에게 일격을 가했다는 일화처럼 말이다.
+      정작 당사자들은 그런 이야기를 하기 싫어한다. 왕의에게 한 번 일격을 먹이고는 아주 철저하게 박살났기 때문.
+        </p>
+        <p class="paragraph">
+        <strong>'유튜브 침착맨 킹덤월드컵'</strong>
+        <br>
+        <br>
+        <!-- 침착맨 킹덤월드컵 64강 -->
+  <div class="Kingdom_video">
+    <iframe src="https://www.youtube.com/embed/lzzQIJslPV8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- 침착맨 킹덤월드컵 32강 -->
+    <iframe src="https://www.youtube.com/embed/5j2N8E807eI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+      </p>
+      <br>
+  </div>
+
+  <footer id="site_footer">
+    <div id="footer_container">
+      <div class="footer_paragraph">
+        상호명 : (주)킹덤위키
+        <span class="footer_menu_bar"></span>
+        대표이사 : 백우혁
+        <span class="footer_menu_bar mobile"></span>
+        개인정보책임자 : 왓캔누나핫바디
+        <span class="footer_menu_bar mobile"></span>
+        사업자등록번호 : 150-67-74-8282
+      </div>
+      <div class="footer_paragraph">
+        본사 :강원도 철원군 상노로 73-26 청성인민해방 교육대대
+      </div>
+      <div class="footer_paragraph">
+        고객지원 : <strong>웬만하면 하지마세요.</strong>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
