@@ -17,7 +17,7 @@
       list-style: none;
     }
 
-    .list {
+    .menu_list {
       text-align: center;
       padding: 15px 20px 15px 25px;
       color: #cccccc;
@@ -41,15 +41,26 @@
     }
 
     #menu_container {
+      display: flex;
+      justify-content: center;
       margin: 0px;
       padding: 1.2em;
       font-size: 25px;
+
     }
 
     #menu_container li {
       display: inline;
-      padding: 20px 0;
       cursor: pointer;
+    }
+
+    #menu_buger {
+      display: none;
+      color: #ffffff;
+      position: absolute;
+      font-size: 20px;
+      top: 8px;
+      right: 12px;
     }
 
     #article {
@@ -66,6 +77,7 @@
     #present_page {
       color:#ffffff;
       font-weight: bold;
+      padding: 15px 20px 15px 25px;
     }
 
     .heading {
@@ -78,6 +90,7 @@
       height: 100px;
       background-color: #f5f5f5;
       border-collapse: collapse;
+      margin-bottom: 50px;
     }
 
     #generals td {
@@ -192,10 +205,36 @@
       margin: 30px;
   }
 
+    #site_footer {
+      background-color: #d1d3d8;
+      border: 3px solid #cccccc;
+      height: 250px;
+    }
+
+    #footer_container {
+      padding: 50PX 0PX 70px;
+      max-width: 1350px;
+      margin: 0 auto;
+      font-size: 18px;
+    }
+
+    .footer_paragraph {
+      padding: 5px 0px;
+    }
+
+    .footer_menu_bar {
+      display: inline-block;
+      background-color: rgba(59,72,89,0.2);
+      width: 2px;
+      height: 16px;
+      margin: 0 6px;
+    }
+
+
 
     /*여기부터는 미디어쿼리 입니다.*/
     /*PC모니터 화면 절반*/
-    @media(max-width:960px) {
+    @media(max-width:1000px) {
 
       .hero_pic {
         margin: 30px auto;
@@ -214,4 +253,11 @@
         display: table;
         margin: 30px auto;
       }
+
+      #footer_container {
+        max-width: 850px;
+        margin: 0 auto;
+      }
+
+
     }
